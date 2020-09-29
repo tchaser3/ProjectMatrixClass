@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindDuplicateProjectMatrixDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDuplicateProjectMatrixDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectMatrixByAssignedProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +89,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="FindDuplicateProjectMatrixDataSet.xsc">
+      <DependentUpon>FindDuplicateProjectMatrixDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDuplicateProjectMatrixDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDuplicateProjectMatrixDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDuplicateProjectMatrixDataSet.xss">
+      <DependentUpon>FindDuplicateProjectMatrixDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindProjectMatrixByAssignedProjectIDDataSet.xsc">
       <DependentUpon>FindProjectMatrixByAssignedProjectIDDataSet.xsd</DependentUpon>
     </None>

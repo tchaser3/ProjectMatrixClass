@@ -33,6 +33,24 @@ namespace ProjectMatrixDLL
 
         RemoveDuplicateProjectMatrixTransactionEntryTableAdapters.QueriesTableAdapter aRemoveDuplicateProjectMatrixTransactionTableAdapter;
 
+        FindDuplicateProjectMatrixDataSet aFindDuplicateProjectMatrixDataSet;
+        FindDuplicateProjectMatrixDataSetTableAdapters.FindDuplicateProjectMatrixTableAdapter aFindDuplicateProjectMatrixTableAdapter;
+
+        public FindDuplicateProjectMatrixDataSet FindDuplicateProjectMatrix()
+        {
+            try
+            {
+                aFindDuplicateProjectMatrixDataSet = new FindDuplicateProjectMatrixDataSet();
+                aFindDuplicateProjectMatrixTableAdapter = new FindDuplicateProjectMatrixDataSetTableAdapters.FindDuplicateProjectMatrixTableAdapter();
+                aFindDuplicateProjectMatrixTableAdapter.Fill(aFindDuplicateProjectMatrixDataSet.FindDuplicateProjectMatrix);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Duplicate Project Matrix " + Ex.Message);
+            }
+
+            return aFindDuplicateProjectMatrixDataSet;
+        }
         public bool RemoveDuplicateProjectMatrixTransaction(int intTransactionID)
         {
             bool blnFatalError = false;
