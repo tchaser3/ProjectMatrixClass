@@ -36,6 +36,24 @@ namespace ProjectMatrixDLL
         FindDuplicateProjectMatrixDataSet aFindDuplicateProjectMatrixDataSet;
         FindDuplicateProjectMatrixDataSetTableAdapters.FindDuplicateProjectMatrixTableAdapter aFindDuplicateProjectMatrixTableAdapter;
 
+        FindProjectMatrixByProjectIDDataSet aFindProjectMatrixByProjectIDDataSet;
+        FindProjectMatrixByProjectIDDataSetTableAdapters.FindProjectMatrixByProjectIDTableAdapter aFindProjectMatrixByProjectIDTableAdapter;
+
+        public FindProjectMatrixByProjectIDDataSet FindProjectMatrixByProjectID(int intProjectID)
+        {
+            try
+            {
+                aFindProjectMatrixByProjectIDDataSet = new FindProjectMatrixByProjectIDDataSet();
+                aFindProjectMatrixByProjectIDTableAdapter = new FindProjectMatrixByProjectIDDataSetTableAdapters.FindProjectMatrixByProjectIDTableAdapter();
+                aFindProjectMatrixByProjectIDTableAdapter.Fill(aFindProjectMatrixByProjectIDDataSet.FindProjectMatrixByProjectID, intProjectID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Project Matrix By Project ID" + Ex.Message);
+            }
+
+            return aFindProjectMatrixByProjectIDDataSet;
+        }
         public FindDuplicateProjectMatrixDataSet FindDuplicateProjectMatrix()
         {
             try

@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectMatrixByCustomerProjectIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProjectMatrixByProjectIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertProjectMatrixEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,6 +126,17 @@
     </None>
     <None Include="FindProjectMatrixByCustomerProjectIDDataSet.xss">
       <DependentUpon>FindProjectMatrixByCustomerProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMatrixByProjectIDDataSet.xsc">
+      <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMatrixByProjectIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectMatrixByProjectIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectMatrixByProjectIDDataSet.xss">
+      <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
     </None>
     <None Include="InsertProjectMatrixEntry.xsc">
       <DependentUpon>InsertProjectMatrixEntry.xsd</DependentUpon>
