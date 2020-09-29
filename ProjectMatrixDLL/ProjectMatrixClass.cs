@@ -7,6 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using NewEventLogDLL;
@@ -30,6 +31,42 @@ namespace ProjectMatrixDLL
         FindProjectMatrixByCustomerProjectIDDataSet aFindProjectMatrixByCustomerProjectIDDataSet;
         FindProjectMatrixByCustomerProjectIDDataSetTableAdapters.FindProjectMatrixByCustomerProjectIDTableAdapter aFindProjectMatrixByCustomerProjectIDTableAdapter;
 
+        RemoveDuplicateProjectMatrixTransactionEntryTableAdapters.QueriesTableAdapter aRemoveDuplicateProjectMatrixTransactionTableAdapter;
+
+        public bool RemoveDuplicateProjectMatrixTransaction(int intTransactionID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aRemoveDuplicateProjectMatrixTransactionTableAdapter = new RemoveDuplicateProjectMatrixTransactionEntryTableAdapters.QueriesTableAdapter();
+                aRemoveDuplicateProjectMatrixTransactionTableAdapter.RemoveDuplicateProjectMatrixTransaction(intTransactionID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Remove Duplicate Project Matrix Transaction " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
+        public  bool UpdateProjectMatrixAssignedProjectID(int intTransactionID, string strAssignedProjectID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateProjectMatrixAssignedProjectIDTableAdapter = new UpdateProjectMatrixAssignedProjectIDEntryTableAdapters.QueriesTableAdapter();
+                aUpdateProjectMatrixAssignedProjectIDTableAdapter.UpdateProjectMatrixAssignedProjectID(intTransactionID, strAssignedProjectID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix // Update Project Matrix Assigned Project ID " + Ex.Message);
+            }
+
+            return blnFatalError;
+        }
         public FindProjectMatrixByCustomerProjectIDDataSet FindProjectMatrixByCustomerProjectID(string strCustomerProjectID)
         {
             try

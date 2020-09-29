@@ -71,6 +71,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="RemoveDuplicateProjectMatrixTransactionEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RemoveDuplicateProjectMatrixTransactionEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateProjectMatrixAssignedProjectIDEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,6 +131,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RemoveDuplicateProjectMatrixTransactionEntry.xsc">
+      <DependentUpon>RemoveDuplicateProjectMatrixTransactionEntry.xsd</DependentUpon>
+    </None>
+    <None Include="RemoveDuplicateProjectMatrixTransactionEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemoveDuplicateProjectMatrixTransactionEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RemoveDuplicateProjectMatrixTransactionEntry.xss">
+      <DependentUpon>RemoveDuplicateProjectMatrixTransactionEntry.xsd</DependentUpon>
     </None>
     <None Include="UpdateProjectMatrixAssignedProjectIDEntry.xsc">
       <DependentUpon>UpdateProjectMatrixAssignedProjectIDEntry.xsd</DependentUpon>
