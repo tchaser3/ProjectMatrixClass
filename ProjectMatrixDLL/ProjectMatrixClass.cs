@@ -39,6 +39,94 @@ namespace ProjectMatrixDLL
         FindProjectMatrixByProjectIDDataSet aFindProjectMatrixByProjectIDDataSet;
         FindProjectMatrixByProjectIDDataSetTableAdapters.FindProjectMatrixByProjectIDTableAdapter aFindProjectMatrixByProjectIDTableAdapter;
 
+        FindProjectMatrixByGreaterDateDataSet aFindProjectMatrixByGreaterDateDataSet;
+        FindProjectMatrixByGreaterDateDataSetTableAdapters.FindProjectMatrixByGreaterDateTableAdapter aFindProjectMatrixByGreaterDateTableAdapter;
+
+        ProjectLastDateDataSet aProjectLastDateDataSet;
+        ProjectLastDateDataSetTableAdapters.projectlastdateTableAdapter aProjectLastDateTableAdapter;
+
+        InsertProjectLastDateEntryTableAdapters.QueriesTableAdapter aInsertProjectLastDateTableAdapter;
+
+        UpdateProjectLastDateEntryTableAdapters.QueriesTableAdapter aUpdateProjectLastDateTableAdapter;
+
+        public bool UpdateProjectLastDate(int intTransactionID, DateTime datLastDate)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateProjectLastDateTableAdapter = new UpdateProjectLastDateEntryTableAdapters.QueriesTableAdapter();
+                aUpdateProjectLastDateTableAdapter.UpdateProjectLastDate(intTransactionID, datLastDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Update Project Last Date " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
+        public bool InsertProjectLastDate(DateTime datLastDate)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aInsertProjectLastDateTableAdapter = new InsertProjectLastDateEntryTableAdapters.QueriesTableAdapter();
+                aInsertProjectLastDateTableAdapter.InsertProjectLastDate(datLastDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Insert Project Last Date " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
+        public ProjectLastDateDataSet GetProjectLastDateInfo()
+        {
+            try
+            {
+                aProjectLastDateDataSet = new ProjectLastDateDataSet();
+                aProjectLastDateTableAdapter = new ProjectLastDateDataSetTableAdapters.projectlastdateTableAdapter();
+                aProjectLastDateTableAdapter.Fill(aProjectLastDateDataSet.projectlastdate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Get Project Last Date Info " + Ex.Message);
+            }
+
+            return aProjectLastDateDataSet;
+        }
+        public void UpdateProjectLastDateDB(ProjectLastDateDataSet aProjectLastDateDataSet)
+        {
+            try
+            {
+                aProjectLastDateTableAdapter = new ProjectLastDateDataSetTableAdapters.projectlastdateTableAdapter();
+                aProjectLastDateTableAdapter.Update(aProjectLastDateDataSet.projectlastdate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Update Project Last Date DB " + Ex.Message);
+            }
+        }
+        public FindProjectMatrixByGreaterDateDataSet FindProjectMatrixByGreaterDate(DateTime datStartDate)
+        {
+            try
+            {
+                aFindProjectMatrixByGreaterDateDataSet = new FindProjectMatrixByGreaterDateDataSet();
+                aFindProjectMatrixByGreaterDateTableAdapter = new FindProjectMatrixByGreaterDateDataSetTableAdapters.FindProjectMatrixByGreaterDateTableAdapter();
+                aFindProjectMatrixByGreaterDateTableAdapter.Fill(aFindProjectMatrixByGreaterDateDataSet.FindProjectMatrixByGreaterDate, datStartDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Project Matrix By Greater Date " + Ex.Message);
+            }
+
+            return aFindProjectMatrixByGreaterDateDataSet;
+        }
         public FindProjectMatrixByProjectIDDataSet FindProjectMatrixByProjectID(int intProjectID)
         {
             try

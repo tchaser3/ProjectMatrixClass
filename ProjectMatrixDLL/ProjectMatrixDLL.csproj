@@ -59,15 +59,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectMatrixByCustomerProjectIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProjectMatrixByGreaterDateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectMatrixByGreaterDateDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectMatrixByProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InsertProjectLastDateEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertProjectLastDateEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertProjectMatrixEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>InsertProjectMatrixEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectLastDateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectLastDateDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjectMatrixClass.cs" />
     <Compile Include="ProjectMatrixDataSet.Designer.cs">
@@ -85,6 +100,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RemoveDuplicateProjectMatrixTransactionEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProjectLastDateEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateProjectLastDateEntry.xsd</DependentUpon>
     </Compile>
     <Compile Include="UpdateProjectMatrixAssignedProjectIDEntry.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,6 +147,17 @@
     <None Include="FindProjectMatrixByCustomerProjectIDDataSet.xss">
       <DependentUpon>FindProjectMatrixByCustomerProjectIDDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindProjectMatrixByGreaterDateDataSet.xsc">
+      <DependentUpon>FindProjectMatrixByGreaterDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectMatrixByGreaterDateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectMatrixByGreaterDateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectMatrixByGreaterDateDataSet.xss">
+      <DependentUpon>FindProjectMatrixByGreaterDateDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindProjectMatrixByProjectIDDataSet.xsc">
       <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
     </None>
@@ -138,6 +169,17 @@
     <None Include="FindProjectMatrixByProjectIDDataSet.xss">
       <DependentUpon>FindProjectMatrixByProjectIDDataSet.xsd</DependentUpon>
     </None>
+    <None Include="InsertProjectLastDateEntry.xsc">
+      <DependentUpon>InsertProjectLastDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertProjectLastDateEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertProjectLastDateEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertProjectLastDateEntry.xss">
+      <DependentUpon>InsertProjectLastDateEntry.xsd</DependentUpon>
+    </None>
     <None Include="InsertProjectMatrixEntry.xsc">
       <DependentUpon>InsertProjectMatrixEntry.xsd</DependentUpon>
     </None>
@@ -148,6 +190,17 @@
     </None>
     <None Include="InsertProjectMatrixEntry.xss">
       <DependentUpon>InsertProjectMatrixEntry.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectLastDateDataSet.xsc">
+      <DependentUpon>ProjectLastDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectLastDateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectLastDateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectLastDateDataSet.xss">
+      <DependentUpon>ProjectLastDateDataSet.xsd</DependentUpon>
     </None>
     <None Include="ProjectMatrixDataSet.xsc">
       <DependentUpon>ProjectMatrixDataSet.xsd</DependentUpon>
@@ -174,6 +227,17 @@
     </None>
     <None Include="RemoveDuplicateProjectMatrixTransactionEntry.xss">
       <DependentUpon>RemoveDuplicateProjectMatrixTransactionEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectLastDateEntry.xsc">
+      <DependentUpon>UpdateProjectLastDateEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectLastDateEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateProjectLastDateEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateProjectLastDateEntry.xss">
+      <DependentUpon>UpdateProjectLastDateEntry.xsd</DependentUpon>
     </None>
     <None Include="UpdateProjectMatrixAssignedProjectIDEntry.xsc">
       <DependentUpon>UpdateProjectMatrixAssignedProjectIDEntry.xsd</DependentUpon>
