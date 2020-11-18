@@ -49,6 +49,46 @@ namespace ProjectMatrixDLL
 
         UpdateProjectLastDateEntryTableAdapters.QueriesTableAdapter aUpdateProjectLastDateTableAdapter;
 
+        UpdateProjectMatrixCustomerProjectIDEntryTableAdapters.QueriesTableAdapter aUpdateProjectMatrixCustomerProjectIDTableAdapter;
+
+        UpdateProjectMatrixItemsEntryTableAdapters.QueriesTableAdapter aUpdateProjectMatrixItemsTableAdapter;
+
+        public bool UpdateProjectMatrixItems(int intTransactionID, int intWarehouseID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateProjectMatrixItemsTableAdapter = new UpdateProjectMatrixItemsEntryTableAdapters.QueriesTableAdapter();
+                aUpdateProjectMatrixItemsTableAdapter.UpdateProjectMatrixItems(intTransactionID, intWarehouseID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Update Project Matrix Items " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
+        public bool UpdateProjectMatrixCustomerProjectID(int intTransactionID, string strCustomerProjectID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateProjectMatrixCustomerProjectIDTableAdapter = new UpdateProjectMatrixCustomerProjectIDEntryTableAdapters.QueriesTableAdapter();
+                aUpdateProjectMatrixCustomerProjectIDTableAdapter.UpdateProjectMatrixCustomerProjectID(intTransactionID, strCustomerProjectID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Update Project Matrix Customer Project ID " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
         public bool UpdateProjectLastDate(int intTransactionID, DateTime datLastDate)
         {
             bool blnFatalError = false;

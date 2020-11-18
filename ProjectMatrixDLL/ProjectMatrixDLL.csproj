@@ -111,6 +111,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UpdateProjectMatrixAssignedProjectIDEntry.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateProjectMatrixCustomerProjectIDEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateProjectMatrixCustomerProjectIDEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProjectMatrixItemsEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateProjectMatrixItemsEntry.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -249,6 +259,28 @@
     </None>
     <None Include="UpdateProjectMatrixAssignedProjectIDEntry.xss">
       <DependentUpon>UpdateProjectMatrixAssignedProjectIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectMatrixCustomerProjectIDEntry.xsc">
+      <DependentUpon>UpdateProjectMatrixCustomerProjectIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectMatrixCustomerProjectIDEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateProjectMatrixCustomerProjectIDEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateProjectMatrixCustomerProjectIDEntry.xss">
+      <DependentUpon>UpdateProjectMatrixCustomerProjectIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectMatrixItemsEntry.xsc">
+      <DependentUpon>UpdateProjectMatrixItemsEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateProjectMatrixItemsEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateProjectMatrixItemsEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateProjectMatrixItemsEntry.xss">
+      <DependentUpon>UpdateProjectMatrixItemsEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
