@@ -53,14 +53,14 @@ namespace ProjectMatrixDLL
 
         UpdateProjectMatrixItemsEntryTableAdapters.QueriesTableAdapter aUpdateProjectMatrixItemsTableAdapter;
 
-        public bool UpdateProjectMatrixItems(int intTransactionID, int intWarehouseID)
+        public bool UpdateProjectMatrixItems(int intTransactionID, int intWarehouseID, int intDepartmentID)
         {
             bool blnFatalError = false;
 
             try
             {
                 aUpdateProjectMatrixItemsTableAdapter = new UpdateProjectMatrixItemsEntryTableAdapters.QueriesTableAdapter();
-                aUpdateProjectMatrixItemsTableAdapter.UpdateProjectMatrixItems(intTransactionID, intWarehouseID);
+                aUpdateProjectMatrixItemsTableAdapter.UpdateProjectMatrixItems(intTransactionID, intWarehouseID, intDepartmentID);
             }
             catch (Exception Ex)
             {
