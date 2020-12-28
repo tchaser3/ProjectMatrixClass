@@ -53,6 +53,24 @@ namespace ProjectMatrixDLL
 
         UpdateProjectMatrixItemsEntryTableAdapters.QueriesTableAdapter aUpdateProjectMatrixItemsTableAdapter;
 
+        FindProjectMatrixByCustomerAssignedIDForEmailDataSet aFindProjectMatrixByCustomerAssignedIDForEmailDataSet;
+        FindProjectMatrixByCustomerAssignedIDForEmailDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDForEmailTableAdapter aFindProjectMatrixByCustomerAssignedIDForEmailTableAdapter;
+
+        public FindProjectMatrixByCustomerAssignedIDForEmailDataSet FindProjectMatrixByCustomerAssignedIDForEmail(string strCustomerAssignedID)
+        {
+            try
+            {
+                aFindProjectMatrixByCustomerAssignedIDForEmailDataSet = new FindProjectMatrixByCustomerAssignedIDForEmailDataSet();
+                aFindProjectMatrixByCustomerAssignedIDForEmailTableAdapter = new FindProjectMatrixByCustomerAssignedIDForEmailDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDForEmailTableAdapter();
+                aFindProjectMatrixByCustomerAssignedIDForEmailTableAdapter.Fill(aFindProjectMatrixByCustomerAssignedIDForEmailDataSet.FindProjectMatrixByCustomerAssignedIDForEmail, strCustomerAssignedID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Project Matrix By Customer Assigned ID For Email " + Ex.Message);
+            }
+
+            return aFindProjectMatrixByCustomerAssignedIDForEmailDataSet;
+        }
         public bool UpdateProjectMatrixItems(int intTransactionID, int intWarehouseID, int intDepartmentID)
         {
             bool blnFatalError = false;
