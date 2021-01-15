@@ -49,6 +49,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindDuplicateProjectMatrixDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindOpenOfficeBusinessLineProjectListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOpenOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindOverdueOfficeBusinessLineProjectListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOverdueOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectMatrixByAssignedProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +149,28 @@
     </None>
     <None Include="FindDuplicateProjectMatrixDataSet.xss">
       <DependentUpon>FindDuplicateProjectMatrixDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenOfficeBusinessLineProjectListDataSet.xsc">
+      <DependentUpon>FindOpenOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenOfficeBusinessLineProjectListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOpenOfficeBusinessLineProjectListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOpenOfficeBusinessLineProjectListDataSet.xss">
+      <DependentUpon>FindOpenOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOverdueOfficeBusinessLineProjectListDataSet.xsc">
+      <DependentUpon>FindOverdueOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOverdueOfficeBusinessLineProjectListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOverdueOfficeBusinessLineProjectListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOverdueOfficeBusinessLineProjectListDataSet.xss">
+      <DependentUpon>FindOverdueOfficeBusinessLineProjectListDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindProjectMatrixByAssignedProjectIDDataSet.xsc">
       <DependentUpon>FindProjectMatrixByAssignedProjectIDDataSet.xsd</DependentUpon>

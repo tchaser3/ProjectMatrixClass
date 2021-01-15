@@ -56,6 +56,42 @@ namespace ProjectMatrixDLL
         FindProjectMatrixByCustomerAssignedIDForEmailDataSet aFindProjectMatrixByCustomerAssignedIDForEmailDataSet;
         FindProjectMatrixByCustomerAssignedIDForEmailDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDForEmailTableAdapter aFindProjectMatrixByCustomerAssignedIDForEmailTableAdapter;
 
+        FindOpenOfficeBusinessLineProjectListDataSet aFindOpenOfficeBusinessLineProjectListDataSet;
+        FindOpenOfficeBusinessLineProjectListDataSetTableAdapters.FindOpenOfficeBusinessLineProjectListTableAdapter aFindOpenOfficeBusinessLineProjectListTableAdapter;
+
+        FindOverdueOfficeBusinessLineProjectListDataSet aFindOverdueOfficeBusinessLineProjectListDataSet;
+        FindOverdueOfficeBusinessLineProjectListDataSetTableAdapters.FindOverdueOfficeBusinessLineProjectListTableAdapter aFindOverdueOfficeBusinessLineProjectListTableAdapter;
+
+        public FindOverdueOfficeBusinessLineProjectListDataSet FindOverdueOfficeBusinessLineProjectList(int intWarehouseID, int intDepartmentID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindOverdueOfficeBusinessLineProjectListDataSet = new FindOverdueOfficeBusinessLineProjectListDataSet();
+                aFindOverdueOfficeBusinessLineProjectListTableAdapter = new FindOverdueOfficeBusinessLineProjectListDataSetTableAdapters.FindOverdueOfficeBusinessLineProjectListTableAdapter();
+                aFindOverdueOfficeBusinessLineProjectListTableAdapter.Fill(aFindOverdueOfficeBusinessLineProjectListDataSet.FindOverdueOfficeBusinessLineProjectList, intWarehouseID, intDepartmentID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Overdue Office Business Line Project List " + Ex.Message);
+            }
+
+            return aFindOverdueOfficeBusinessLineProjectListDataSet;
+        }
+        public FindOpenOfficeBusinessLineProjectListDataSet FindOpenOfficeBusinessLineProjectList(int intWarehouseID, int intDepartmentID)
+        {
+            try
+            {
+                aFindOpenOfficeBusinessLineProjectListDataSet = new FindOpenOfficeBusinessLineProjectListDataSet();
+                aFindOpenOfficeBusinessLineProjectListTableAdapter = new FindOpenOfficeBusinessLineProjectListDataSetTableAdapters.FindOpenOfficeBusinessLineProjectListTableAdapter();
+                aFindOpenOfficeBusinessLineProjectListTableAdapter.Fill(aFindOpenOfficeBusinessLineProjectListDataSet.FindOpenOfficeBusinessLineProjectList, intWarehouseID, intDepartmentID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Open Office Business Line Project List " + Ex.Message);
+            }
+
+            return aFindOpenOfficeBusinessLineProjectListDataSet;
+        }
         public FindProjectMatrixByCustomerAssignedIDForEmailDataSet FindProjectMatrixByCustomerAssignedIDForEmail(string strCustomerAssignedID)
         {
             try
