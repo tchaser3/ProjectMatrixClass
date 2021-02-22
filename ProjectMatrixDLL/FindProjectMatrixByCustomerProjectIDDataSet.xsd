@@ -28,6 +28,7 @@
               <Mapping SourceColumn="AssignedProjectID" DataSetColumn="AssignedProjectID" />
               <Mapping SourceColumn="CustomerAssignedID" DataSetColumn="CustomerAssignedID" />
               <Mapping SourceColumn="AssignedOffice" DataSetColumn="AssignedOffice" />
+              <Mapping SourceColumn="BusinessLineID" DataSetColumn="BusinessLineID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -66,6 +67,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="BusinessLineID" msprop:Generator_ColumnVarNameInTable="columnBusinessLineID" msprop:Generator_ColumnPropNameInRow="BusinessLineID" msprop:Generator_ColumnPropNameInTable="BusinessLineIDColumn" msprop:Generator_UserColumnName="BusinessLineID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

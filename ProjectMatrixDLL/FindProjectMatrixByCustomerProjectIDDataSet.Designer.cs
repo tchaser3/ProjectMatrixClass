@@ -291,6 +291,8 @@ namespace ProjectMatrixDLL {
             
             private global::System.Data.DataColumn columnAssignedOffice;
             
+            private global::System.Data.DataColumn columnBusinessLineID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FindProjectMatrixByCustomerProjectIDDataTable() {
@@ -374,6 +376,14 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BusinessLineIDColumn {
+                get {
+                    return this.columnBusinessLineID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +419,7 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindProjectMatrixByCustomerProjectIDRow AddFindProjectMatrixByCustomerProjectIDRow(System.DateTime TransactionDate, int ProjectID, string AssignedProjectID, string CustomerAssignedID, string AssignedOffice) {
+            public FindProjectMatrixByCustomerProjectIDRow AddFindProjectMatrixByCustomerProjectIDRow(System.DateTime TransactionDate, int ProjectID, string AssignedProjectID, string CustomerAssignedID, string AssignedOffice, int BusinessLineID) {
                 FindProjectMatrixByCustomerProjectIDRow rowFindProjectMatrixByCustomerProjectIDRow = ((FindProjectMatrixByCustomerProjectIDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -417,7 +427,8 @@ namespace ProjectMatrixDLL {
                         ProjectID,
                         AssignedProjectID,
                         CustomerAssignedID,
-                        AssignedOffice};
+                        AssignedOffice,
+                        BusinessLineID};
                 rowFindProjectMatrixByCustomerProjectIDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindProjectMatrixByCustomerProjectIDRow);
                 return rowFindProjectMatrixByCustomerProjectIDRow;
@@ -453,6 +464,7 @@ namespace ProjectMatrixDLL {
                 this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
                 this.columnCustomerAssignedID = base.Columns["CustomerAssignedID"];
                 this.columnAssignedOffice = base.Columns["AssignedOffice"];
+                this.columnBusinessLineID = base.Columns["BusinessLineID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -470,6 +482,8 @@ namespace ProjectMatrixDLL {
                 base.Columns.Add(this.columnCustomerAssignedID);
                 this.columnAssignedOffice = new global::System.Data.DataColumn("AssignedOffice", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAssignedOffice);
+                this.columnBusinessLineID = new global::System.Data.DataColumn("BusinessLineID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBusinessLineID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransactionID}, true));
                 this.columnTransactionID.AutoIncrement = true;
@@ -484,6 +498,7 @@ namespace ProjectMatrixDLL {
                 this.columnCustomerAssignedID.MaxLength = 2147483647;
                 this.columnAssignedOffice.AllowDBNull = false;
                 this.columnAssignedOffice.MaxLength = 2147483647;
+                this.columnBusinessLineID.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -689,6 +704,17 @@ namespace ProjectMatrixDLL {
                     this[this.tableFindProjectMatrixByCustomerProjectID.AssignedOfficeColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int BusinessLineID {
+                get {
+                    return ((int)(this[this.tableFindProjectMatrixByCustomerProjectID.BusinessLineIDColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerProjectID.BusinessLineIDColumn] = value;
+                }
+            }
         }
         
         /// <summary>
@@ -856,6 +882,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByCustomerProjectIDDataSetTableAdapt
             tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
             tableMapping.ColumnMappings.Add("CustomerAssignedID", "CustomerAssignedID");
             tableMapping.ColumnMappings.Add("AssignedOffice", "AssignedOffice");
+            tableMapping.ColumnMappings.Add("BusinessLineID", "BusinessLineID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
