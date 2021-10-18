@@ -62,6 +62,24 @@ namespace ProjectMatrixDLL
         FindOverdueOfficeBusinessLineProjectListDataSet aFindOverdueOfficeBusinessLineProjectListDataSet;
         FindOverdueOfficeBusinessLineProjectListDataSetTableAdapters.FindOverdueOfficeBusinessLineProjectListTableAdapter aFindOverdueOfficeBusinessLineProjectListTableAdapter;
 
+        FindProjectMatrixByCustomerAssignedIDShortDataSet aFindProjectMatrixByCustomerAssignedIDShortDataSet;
+        FindProjectMatrixByCustomerAssignedIDShortDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDShortTableAdapter aFindProjectMatrixByCustomerAssignedIDShortTableAdapter;
+
+        public FindProjectMatrixByCustomerAssignedIDShortDataSet FindProjectMatrixByCustomerAssignedIDShort(string strCustomerAssignedID)
+        {
+            try
+            {
+                aFindProjectMatrixByCustomerAssignedIDShortDataSet = new FindProjectMatrixByCustomerAssignedIDShortDataSet();
+                aFindProjectMatrixByCustomerAssignedIDShortTableAdapter = new FindProjectMatrixByCustomerAssignedIDShortDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDShortTableAdapter();
+                aFindProjectMatrixByCustomerAssignedIDShortTableAdapter.Fill(aFindProjectMatrixByCustomerAssignedIDShortDataSet.FindProjectMatrixByCustomerAssignedIDShort, strCustomerAssignedID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Project Matrix By Customer Assigned ID Short " + Ex.Message);
+            }
+
+            return aFindProjectMatrixByCustomerAssignedIDShortDataSet;
+        }
         public FindOverdueOfficeBusinessLineProjectListDataSet FindOverdueOfficeBusinessLineProjectList(int intWarehouseID, int intDepartmentID, DateTime datTransactionDate)
         {
             try
