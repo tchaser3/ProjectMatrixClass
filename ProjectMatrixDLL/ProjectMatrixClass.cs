@@ -65,6 +65,24 @@ namespace ProjectMatrixDLL
         FindProjectMatrixByCustomerAssignedIDShortDataSet aFindProjectMatrixByCustomerAssignedIDShortDataSet;
         FindProjectMatrixByCustomerAssignedIDShortDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDShortTableAdapter aFindProjectMatrixByCustomerAssignedIDShortTableAdapter;
 
+        FindProjectMatrixByCustomerAssignedIDDataSet aFindProjectMatrixByCustomerAssignedIDDataSet;
+        FindProjectMatrixByCustomerAssignedIDDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDTableAdapter aFindProjectMatrixByCustomerAssignedIDTableAdapter;
+
+        public FindProjectMatrixByCustomerAssignedIDDataSet FindProjectMatrixByCustomerAssignedID(string strCustomerAssignedID)
+        {
+            try
+            {
+                aFindProjectMatrixByCustomerAssignedIDDataSet = new FindProjectMatrixByCustomerAssignedIDDataSet();
+                aFindProjectMatrixByCustomerAssignedIDTableAdapter = new FindProjectMatrixByCustomerAssignedIDDataSetTableAdapters.FindProjectMatrixByCustomerAssignedIDTableAdapter();
+                aFindProjectMatrixByCustomerAssignedIDTableAdapter.Fill(aFindProjectMatrixByCustomerAssignedIDDataSet.FindProjectMatrixByCustomerAssignedID, strCustomerAssignedID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Matrix Class // Find Project Matrix Customer Assigned ID " + Ex.Message);
+            }
+
+            return aFindProjectMatrixByCustomerAssignedIDDataSet;
+        }
         public FindProjectMatrixByCustomerAssignedIDShortDataSet FindProjectMatrixByCustomerAssignedIDShort(string strCustomerAssignedID)
         {
             try

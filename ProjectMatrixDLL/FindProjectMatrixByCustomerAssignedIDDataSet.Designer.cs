@@ -20,17 +20,17 @@ namespace ProjectMatrixDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindProjectMatrixByAssignedProjectIDDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindProjectMatrixByCustomerAssignedIDDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindProjectMatrixByAssignedProjectIDDataSet : global::System.Data.DataSet {
+    public partial class FindProjectMatrixByCustomerAssignedIDDataSet : global::System.Data.DataSet {
         
-        private FindProjectMatrixByAssignedProjectIDDataTable tableFindProjectMatrixByAssignedProjectID;
+        private FindProjectMatrixByCustomerAssignedIDDataTable tableFindProjectMatrixByCustomerAssignedID;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindProjectMatrixByAssignedProjectIDDataSet() {
+        public FindProjectMatrixByCustomerAssignedIDDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ProjectMatrixDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected FindProjectMatrixByAssignedProjectIDDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindProjectMatrixByCustomerAssignedIDDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ProjectMatrixDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindProjectMatrixByAssignedProjectID"] != null)) {
-                    base.Tables.Add(new FindProjectMatrixByAssignedProjectIDDataTable(ds.Tables["FindProjectMatrixByAssignedProjectID"]));
+                if ((ds.Tables["FindProjectMatrixByCustomerAssignedID"] != null)) {
+                    base.Tables.Add(new FindProjectMatrixByCustomerAssignedIDDataTable(ds.Tables["FindProjectMatrixByCustomerAssignedID"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ProjectMatrixDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindProjectMatrixByAssignedProjectIDDataTable FindProjectMatrixByAssignedProjectID {
+        public FindProjectMatrixByCustomerAssignedIDDataTable FindProjectMatrixByCustomerAssignedID {
             get {
-                return this.tableFindProjectMatrixByAssignedProjectID;
+                return this.tableFindProjectMatrixByCustomerAssignedID;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ProjectMatrixDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindProjectMatrixByAssignedProjectIDDataSet cln = ((FindProjectMatrixByAssignedProjectIDDataSet)(base.Clone()));
+            FindProjectMatrixByCustomerAssignedIDDataSet cln = ((FindProjectMatrixByCustomerAssignedIDDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ProjectMatrixDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindProjectMatrixByAssignedProjectID"] != null)) {
-                    base.Tables.Add(new FindProjectMatrixByAssignedProjectIDDataTable(ds.Tables["FindProjectMatrixByAssignedProjectID"]));
+                if ((ds.Tables["FindProjectMatrixByCustomerAssignedID"] != null)) {
+                    base.Tables.Add(new FindProjectMatrixByCustomerAssignedIDDataTable(ds.Tables["FindProjectMatrixByCustomerAssignedID"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ProjectMatrixDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindProjectMatrixByAssignedProjectID = ((FindProjectMatrixByAssignedProjectIDDataTable)(base.Tables["FindProjectMatrixByAssignedProjectID"]));
+            this.tableFindProjectMatrixByCustomerAssignedID = ((FindProjectMatrixByCustomerAssignedIDDataTable)(base.Tables["FindProjectMatrixByCustomerAssignedID"]));
             if ((initTable == true)) {
-                if ((this.tableFindProjectMatrixByAssignedProjectID != null)) {
-                    this.tableFindProjectMatrixByAssignedProjectID.InitVars();
+                if ((this.tableFindProjectMatrixByCustomerAssignedID != null)) {
+                    this.tableFindProjectMatrixByCustomerAssignedID.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ProjectMatrixDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindProjectMatrixByAssignedProjectIDDataSet";
+            this.DataSetName = "FindProjectMatrixByCustomerAssignedIDDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindProjectMatrixByAssignedProjectIDDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindProjectMatrixByCustomerAssignedIDDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindProjectMatrixByAssignedProjectID = new FindProjectMatrixByAssignedProjectIDDataTable();
-            base.Tables.Add(this.tableFindProjectMatrixByAssignedProjectID);
+            this.tableFindProjectMatrixByCustomerAssignedID = new FindProjectMatrixByCustomerAssignedIDDataTable();
+            base.Tables.Add(this.tableFindProjectMatrixByCustomerAssignedID);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeFindProjectMatrixByAssignedProjectID() {
+        private bool ShouldSerializeFindProjectMatrixByCustomerAssignedID() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ProjectMatrixDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindProjectMatrixByAssignedProjectIDDataSet ds = new FindProjectMatrixByAssignedProjectIDDataSet();
+            FindProjectMatrixByCustomerAssignedIDDataSet ds = new FindProjectMatrixByCustomerAssignedIDDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,43 @@ namespace ProjectMatrixDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void FindProjectMatrixByAssignedProjectIDRowChangeEventHandler(object sender, FindProjectMatrixByAssignedProjectIDRowChangeEvent e);
+        public delegate void FindProjectMatrixByCustomerAssignedIDRowChangeEventHandler(object sender, FindProjectMatrixByCustomerAssignedIDRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindProjectMatrixByAssignedProjectIDDataTable : global::System.Data.TypedTableBase<FindProjectMatrixByAssignedProjectIDRow> {
-            
-            private global::System.Data.DataColumn columnTransactionID;
-            
-            private global::System.Data.DataColumn columnTransactionDate;
+        public partial class FindProjectMatrixByCustomerAssignedIDDataTable : global::System.Data.TypedTableBase<FindProjectMatrixByCustomerAssignedIDRow> {
             
             private global::System.Data.DataColumn columnProjectID;
             
-            private global::System.Data.DataColumn columnAssignedProjectID;
-            
             private global::System.Data.DataColumn columnCustomerAssignedID;
             
-            private global::System.Data.DataColumn columnAssignedOffice;
+            private global::System.Data.DataColumn columnAssignedProjectID;
+            
+            private global::System.Data.DataColumn columnProjectName;
+            
+            private global::System.Data.DataColumn columnBusinessAddress;
+            
+            private global::System.Data.DataColumn columnAssignedOfficeID;
+            
+            private global::System.Data.DataColumn columnDepartment;
+            
+            private global::System.Data.DataColumn columnDateReceived;
+            
+            private global::System.Data.DataColumn columnECDDate;
+            
+            private global::System.Data.DataColumn columnWorkOrderStatus;
+            
+            private global::System.Data.DataColumn columnProjectManager;
+            
+            private global::System.Data.DataColumn columnProjectNotes;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDDataTable() {
-                this.TableName = "FindProjectMatrixByAssignedProjectID";
+            public FindProjectMatrixByCustomerAssignedIDDataTable() {
+                this.TableName = "FindProjectMatrixByCustomerAssignedID";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +314,7 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindProjectMatrixByAssignedProjectIDDataTable(global::System.Data.DataTable table) {
+            internal FindProjectMatrixByCustomerAssignedIDDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,25 +331,9 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected FindProjectMatrixByAssignedProjectIDDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindProjectMatrixByCustomerAssignedIDDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TransactionIDColumn {
-                get {
-                    return this.columnTransactionID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
-                get {
-                    return this.columnTransactionDate;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -345,14 +341,6 @@ namespace ProjectMatrixDLL {
             public global::System.Data.DataColumn ProjectIDColumn {
                 get {
                     return this.columnProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AssignedProjectIDColumn {
-                get {
-                    return this.columnAssignedProjectID;
                 }
             }
             
@@ -366,9 +354,81 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AssignedOfficeColumn {
+            public global::System.Data.DataColumn AssignedProjectIDColumn {
                 get {
-                    return this.columnAssignedOffice;
+                    return this.columnAssignedProjectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ProjectNameColumn {
+                get {
+                    return this.columnProjectName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BusinessAddressColumn {
+                get {
+                    return this.columnBusinessAddress;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AssignedOfficeIDColumn {
+                get {
+                    return this.columnAssignedOfficeID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DepartmentColumn {
+                get {
+                    return this.columnDepartment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DateReceivedColumn {
+                get {
+                    return this.columnDateReceived;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ECDDateColumn {
+                get {
+                    return this.columnECDDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WorkOrderStatusColumn {
+                get {
+                    return this.columnWorkOrderStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ProjectManagerColumn {
+                get {
+                    return this.columnProjectManager;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ProjectNotesColumn {
+                get {
+                    return this.columnProjectNotes;
                 }
             }
             
@@ -383,57 +443,56 @@ namespace ProjectMatrixDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRow this[int index] {
+            public FindProjectMatrixByCustomerAssignedIDRow this[int index] {
                 get {
-                    return ((FindProjectMatrixByAssignedProjectIDRow)(this.Rows[index]));
+                    return ((FindProjectMatrixByCustomerAssignedIDRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindProjectMatrixByAssignedProjectIDRowChangeEventHandler FindProjectMatrixByAssignedProjectIDRowChanging;
+            public event FindProjectMatrixByCustomerAssignedIDRowChangeEventHandler FindProjectMatrixByCustomerAssignedIDRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindProjectMatrixByAssignedProjectIDRowChangeEventHandler FindProjectMatrixByAssignedProjectIDRowChanged;
+            public event FindProjectMatrixByCustomerAssignedIDRowChangeEventHandler FindProjectMatrixByCustomerAssignedIDRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindProjectMatrixByAssignedProjectIDRowChangeEventHandler FindProjectMatrixByAssignedProjectIDRowDeleting;
+            public event FindProjectMatrixByCustomerAssignedIDRowChangeEventHandler FindProjectMatrixByCustomerAssignedIDRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FindProjectMatrixByAssignedProjectIDRowChangeEventHandler FindProjectMatrixByAssignedProjectIDRowDeleted;
+            public event FindProjectMatrixByCustomerAssignedIDRowChangeEventHandler FindProjectMatrixByCustomerAssignedIDRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddFindProjectMatrixByAssignedProjectIDRow(FindProjectMatrixByAssignedProjectIDRow row) {
+            public void AddFindProjectMatrixByCustomerAssignedIDRow(FindProjectMatrixByCustomerAssignedIDRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRow AddFindProjectMatrixByAssignedProjectIDRow(System.DateTime TransactionDate, int ProjectID, string AssignedProjectID, string CustomerAssignedID, string AssignedOffice) {
-                FindProjectMatrixByAssignedProjectIDRow rowFindProjectMatrixByAssignedProjectIDRow = ((FindProjectMatrixByAssignedProjectIDRow)(this.NewRow()));
+            public FindProjectMatrixByCustomerAssignedIDRow AddFindProjectMatrixByCustomerAssignedIDRow(int ProjectID, string CustomerAssignedID, string AssignedProjectID, string ProjectName, string BusinessAddress, int AssignedOfficeID, string Department, System.DateTime DateReceived, System.DateTime ECDDate, string WorkOrderStatus, string ProjectManager, string ProjectNotes) {
+                FindProjectMatrixByCustomerAssignedIDRow rowFindProjectMatrixByCustomerAssignedIDRow = ((FindProjectMatrixByCustomerAssignedIDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        TransactionDate,
                         ProjectID,
-                        AssignedProjectID,
                         CustomerAssignedID,
-                        AssignedOffice};
-                rowFindProjectMatrixByAssignedProjectIDRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindProjectMatrixByAssignedProjectIDRow);
-                return rowFindProjectMatrixByAssignedProjectIDRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRow FindByTransactionID(int TransactionID) {
-                return ((FindProjectMatrixByAssignedProjectIDRow)(this.Rows.Find(new object[] {
-                            TransactionID})));
+                        AssignedProjectID,
+                        ProjectName,
+                        BusinessAddress,
+                        AssignedOfficeID,
+                        Department,
+                        DateReceived,
+                        ECDDate,
+                        WorkOrderStatus,
+                        ProjectManager,
+                        ProjectNotes};
+                rowFindProjectMatrixByCustomerAssignedIDRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindProjectMatrixByCustomerAssignedIDRow);
+                return rowFindProjectMatrixByCustomerAssignedIDRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindProjectMatrixByAssignedProjectIDDataTable cln = ((FindProjectMatrixByAssignedProjectIDDataTable)(base.Clone()));
+                FindProjectMatrixByCustomerAssignedIDDataTable cln = ((FindProjectMatrixByCustomerAssignedIDDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,75 +500,97 @@ namespace ProjectMatrixDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindProjectMatrixByAssignedProjectIDDataTable();
+                return new FindProjectMatrixByCustomerAssignedIDDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnTransactionID = base.Columns["TransactionID"];
-                this.columnTransactionDate = base.Columns["TransactionDate"];
                 this.columnProjectID = base.Columns["ProjectID"];
-                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
                 this.columnCustomerAssignedID = base.Columns["CustomerAssignedID"];
-                this.columnAssignedOffice = base.Columns["AssignedOffice"];
+                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
+                this.columnProjectName = base.Columns["ProjectName"];
+                this.columnBusinessAddress = base.Columns["BusinessAddress"];
+                this.columnAssignedOfficeID = base.Columns["AssignedOfficeID"];
+                this.columnDepartment = base.Columns["Department"];
+                this.columnDateReceived = base.Columns["DateReceived"];
+                this.columnECDDate = base.Columns["ECDDate"];
+                this.columnWorkOrderStatus = base.Columns["WorkOrderStatus"];
+                this.columnProjectManager = base.Columns["ProjectManager"];
+                this.columnProjectNotes = base.Columns["ProjectNotes"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionID);
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
                 this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectID);
-                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssignedProjectID);
                 this.columnCustomerAssignedID = new global::System.Data.DataColumn("CustomerAssignedID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerAssignedID);
-                this.columnAssignedOffice = new global::System.Data.DataColumn("AssignedOffice", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssignedOffice);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnTransactionID}, true));
-                this.columnTransactionID.AutoIncrement = true;
-                this.columnTransactionID.AllowDBNull = false;
-                this.columnTransactionID.ReadOnly = true;
-                this.columnTransactionID.Unique = true;
-                this.columnTransactionDate.AllowDBNull = false;
+                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAssignedProjectID);
+                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectName);
+                this.columnBusinessAddress = new global::System.Data.DataColumn("BusinessAddress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBusinessAddress);
+                this.columnAssignedOfficeID = new global::System.Data.DataColumn("AssignedOfficeID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAssignedOfficeID);
+                this.columnDepartment = new global::System.Data.DataColumn("Department", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDepartment);
+                this.columnDateReceived = new global::System.Data.DataColumn("DateReceived", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateReceived);
+                this.columnECDDate = new global::System.Data.DataColumn("ECDDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnECDDate);
+                this.columnWorkOrderStatus = new global::System.Data.DataColumn("WorkOrderStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWorkOrderStatus);
+                this.columnProjectManager = new global::System.Data.DataColumn("ProjectManager", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectManager);
+                this.columnProjectNotes = new global::System.Data.DataColumn("ProjectNotes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectNotes);
                 this.columnProjectID.AllowDBNull = false;
-                this.columnAssignedProjectID.AllowDBNull = false;
-                this.columnAssignedProjectID.MaxLength = 2147483647;
                 this.columnCustomerAssignedID.AllowDBNull = false;
                 this.columnCustomerAssignedID.MaxLength = 2147483647;
-                this.columnAssignedOffice.AllowDBNull = false;
-                this.columnAssignedOffice.MaxLength = 2147483647;
+                this.columnAssignedProjectID.AllowDBNull = false;
+                this.columnAssignedProjectID.MaxLength = 2147483647;
+                this.columnProjectName.AllowDBNull = false;
+                this.columnProjectName.MaxLength = 2147483647;
+                this.columnBusinessAddress.AllowDBNull = false;
+                this.columnBusinessAddress.MaxLength = 2147483647;
+                this.columnAssignedOfficeID.AllowDBNull = false;
+                this.columnDepartment.AllowDBNull = false;
+                this.columnDepartment.MaxLength = 2147483647;
+                this.columnDateReceived.AllowDBNull = false;
+                this.columnWorkOrderStatus.AllowDBNull = false;
+                this.columnWorkOrderStatus.MaxLength = 2147483647;
+                this.columnProjectManager.ReadOnly = true;
+                this.columnProjectManager.MaxLength = 2147483647;
+                this.columnProjectNotes.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRow NewFindProjectMatrixByAssignedProjectIDRow() {
-                return ((FindProjectMatrixByAssignedProjectIDRow)(this.NewRow()));
+            public FindProjectMatrixByCustomerAssignedIDRow NewFindProjectMatrixByCustomerAssignedIDRow() {
+                return ((FindProjectMatrixByCustomerAssignedIDRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindProjectMatrixByAssignedProjectIDRow(builder);
+                return new FindProjectMatrixByCustomerAssignedIDRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindProjectMatrixByAssignedProjectIDRow);
+                return typeof(FindProjectMatrixByCustomerAssignedIDRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindProjectMatrixByAssignedProjectIDRowChanged != null)) {
-                    this.FindProjectMatrixByAssignedProjectIDRowChanged(this, new FindProjectMatrixByAssignedProjectIDRowChangeEvent(((FindProjectMatrixByAssignedProjectIDRow)(e.Row)), e.Action));
+                if ((this.FindProjectMatrixByCustomerAssignedIDRowChanged != null)) {
+                    this.FindProjectMatrixByCustomerAssignedIDRowChanged(this, new FindProjectMatrixByCustomerAssignedIDRowChangeEvent(((FindProjectMatrixByCustomerAssignedIDRow)(e.Row)), e.Action));
                 }
             }
             
@@ -517,8 +598,8 @@ namespace ProjectMatrixDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindProjectMatrixByAssignedProjectIDRowChanging != null)) {
-                    this.FindProjectMatrixByAssignedProjectIDRowChanging(this, new FindProjectMatrixByAssignedProjectIDRowChangeEvent(((FindProjectMatrixByAssignedProjectIDRow)(e.Row)), e.Action));
+                if ((this.FindProjectMatrixByCustomerAssignedIDRowChanging != null)) {
+                    this.FindProjectMatrixByCustomerAssignedIDRowChanging(this, new FindProjectMatrixByCustomerAssignedIDRowChangeEvent(((FindProjectMatrixByCustomerAssignedIDRow)(e.Row)), e.Action));
                 }
             }
             
@@ -526,8 +607,8 @@ namespace ProjectMatrixDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindProjectMatrixByAssignedProjectIDRowDeleted != null)) {
-                    this.FindProjectMatrixByAssignedProjectIDRowDeleted(this, new FindProjectMatrixByAssignedProjectIDRowChangeEvent(((FindProjectMatrixByAssignedProjectIDRow)(e.Row)), e.Action));
+                if ((this.FindProjectMatrixByCustomerAssignedIDRowDeleted != null)) {
+                    this.FindProjectMatrixByCustomerAssignedIDRowDeleted(this, new FindProjectMatrixByCustomerAssignedIDRowChangeEvent(((FindProjectMatrixByCustomerAssignedIDRow)(e.Row)), e.Action));
                 }
             }
             
@@ -535,14 +616,14 @@ namespace ProjectMatrixDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindProjectMatrixByAssignedProjectIDRowDeleting != null)) {
-                    this.FindProjectMatrixByAssignedProjectIDRowDeleting(this, new FindProjectMatrixByAssignedProjectIDRowChangeEvent(((FindProjectMatrixByAssignedProjectIDRow)(e.Row)), e.Action));
+                if ((this.FindProjectMatrixByCustomerAssignedIDRowDeleting != null)) {
+                    this.FindProjectMatrixByCustomerAssignedIDRowDeleting(this, new FindProjectMatrixByCustomerAssignedIDRowChangeEvent(((FindProjectMatrixByCustomerAssignedIDRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveFindProjectMatrixByAssignedProjectIDRow(FindProjectMatrixByAssignedProjectIDRow row) {
+            public void RemoveFindProjectMatrixByCustomerAssignedIDRow(FindProjectMatrixByCustomerAssignedIDRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -551,7 +632,7 @@ namespace ProjectMatrixDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindProjectMatrixByAssignedProjectIDDataSet ds = new FindProjectMatrixByAssignedProjectIDDataSet();
+                FindProjectMatrixByCustomerAssignedIDDataSet ds = new FindProjectMatrixByCustomerAssignedIDDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -569,7 +650,7 @@ namespace ProjectMatrixDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindProjectMatrixByAssignedProjectIDDataTable";
+                attribute2.FixedValue = "FindProjectMatrixByCustomerAssignedIDDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -613,58 +694,25 @@ namespace ProjectMatrixDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindProjectMatrixByAssignedProjectIDRow : global::System.Data.DataRow {
+        public partial class FindProjectMatrixByCustomerAssignedIDRow : global::System.Data.DataRow {
             
-            private FindProjectMatrixByAssignedProjectIDDataTable tableFindProjectMatrixByAssignedProjectID;
+            private FindProjectMatrixByCustomerAssignedIDDataTable tableFindProjectMatrixByCustomerAssignedID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FindProjectMatrixByAssignedProjectIDRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindProjectMatrixByCustomerAssignedIDRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindProjectMatrixByAssignedProjectID = ((FindProjectMatrixByAssignedProjectIDDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TransactionID {
-                get {
-                    return ((int)(this[this.tableFindProjectMatrixByAssignedProjectID.TransactionIDColumn]));
-                }
-                set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.TransactionIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime TransactionDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableFindProjectMatrixByAssignedProjectID.TransactionDateColumn]));
-                }
-                set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.TransactionDateColumn] = value;
-                }
+                this.tableFindProjectMatrixByCustomerAssignedID = ((FindProjectMatrixByCustomerAssignedIDDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int ProjectID {
                 get {
-                    return ((int)(this[this.tableFindProjectMatrixByAssignedProjectID.ProjectIDColumn]));
+                    return ((int)(this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectIDColumn]));
                 }
                 set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.ProjectIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string AssignedProjectID {
-                get {
-                    return ((string)(this[this.tableFindProjectMatrixByAssignedProjectID.AssignedProjectIDColumn]));
-                }
-                set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.AssignedProjectIDColumn] = value;
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectIDColumn] = value;
                 }
             }
             
@@ -672,22 +720,175 @@ namespace ProjectMatrixDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string CustomerAssignedID {
                 get {
-                    return ((string)(this[this.tableFindProjectMatrixByAssignedProjectID.CustomerAssignedIDColumn]));
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.CustomerAssignedIDColumn]));
                 }
                 set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.CustomerAssignedIDColumn] = value;
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.CustomerAssignedIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string AssignedOffice {
+            public string AssignedProjectID {
                 get {
-                    return ((string)(this[this.tableFindProjectMatrixByAssignedProjectID.AssignedOfficeColumn]));
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.AssignedProjectIDColumn]));
                 }
                 set {
-                    this[this.tableFindProjectMatrixByAssignedProjectID.AssignedOfficeColumn] = value;
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.AssignedProjectIDColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ProjectName {
+                get {
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectNameColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BusinessAddress {
+                get {
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.BusinessAddressColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.BusinessAddressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AssignedOfficeID {
+                get {
+                    return ((int)(this[this.tableFindProjectMatrixByCustomerAssignedID.AssignedOfficeIDColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.AssignedOfficeIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Department {
+                get {
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.DepartmentColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.DepartmentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime DateReceived {
+                get {
+                    return ((global::System.DateTime)(this[this.tableFindProjectMatrixByCustomerAssignedID.DateReceivedColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.DateReceivedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime ECDDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableFindProjectMatrixByCustomerAssignedID.ECDDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ECDDate\' in table \'FindProjectMatrixByCustomerAssignedID\' i" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.ECDDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string WorkOrderStatus {
+                get {
+                    return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.WorkOrderStatusColumn]));
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.WorkOrderStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ProjectManager {
+                get {
+                    try {
+                        return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectManagerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ProjectManager\' in table \'FindProjectMatrixByCustomerAssign" +
+                                "edID\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectManagerColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ProjectNotes {
+                get {
+                    try {
+                        return ((string)(this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectNotesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ProjectNotes\' in table \'FindProjectMatrixByCustomerAssigned" +
+                                "ID\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectNotesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsECDDateNull() {
+                return this.IsNull(this.tableFindProjectMatrixByCustomerAssignedID.ECDDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetECDDateNull() {
+                this[this.tableFindProjectMatrixByCustomerAssignedID.ECDDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsProjectManagerNull() {
+                return this.IsNull(this.tableFindProjectMatrixByCustomerAssignedID.ProjectManagerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetProjectManagerNull() {
+                this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectManagerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsProjectNotesNull() {
+                return this.IsNull(this.tableFindProjectMatrixByCustomerAssignedID.ProjectNotesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetProjectNotesNull() {
+                this[this.tableFindProjectMatrixByCustomerAssignedID.ProjectNotesColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -695,22 +896,22 @@ namespace ProjectMatrixDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class FindProjectMatrixByAssignedProjectIDRowChangeEvent : global::System.EventArgs {
+        public class FindProjectMatrixByCustomerAssignedIDRowChangeEvent : global::System.EventArgs {
             
-            private FindProjectMatrixByAssignedProjectIDRow eventRow;
+            private FindProjectMatrixByCustomerAssignedIDRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRowChangeEvent(FindProjectMatrixByAssignedProjectIDRow row, global::System.Data.DataRowAction action) {
+            public FindProjectMatrixByCustomerAssignedIDRowChangeEvent(FindProjectMatrixByCustomerAssignedIDRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FindProjectMatrixByAssignedProjectIDRow Row {
+            public FindProjectMatrixByCustomerAssignedIDRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -726,7 +927,7 @@ namespace ProjectMatrixDLL {
         }
     }
 }
-namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapters {
+namespace ProjectMatrixDLL.FindProjectMatrixByCustomerAssignedIDDataSetTableAdapters {
     
     
     /// <summary>
@@ -738,7 +939,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindProjectMatrixByAssignedProjectIDTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindProjectMatrixByCustomerAssignedIDTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -752,7 +953,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public FindProjectMatrixByAssignedProjectIDTableAdapter() {
+        public FindProjectMatrixByCustomerAssignedIDTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -849,13 +1050,19 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindProjectMatrixByAssignedProjectID";
-            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
+            tableMapping.DataSetTable = "FindProjectMatrixByCustomerAssignedID";
             tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
-            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
             tableMapping.ColumnMappings.Add("CustomerAssignedID", "CustomerAssignedID");
-            tableMapping.ColumnMappings.Add("AssignedOffice", "AssignedOffice");
+            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
+            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
+            tableMapping.ColumnMappings.Add("BusinessAddress", "BusinessAddress");
+            tableMapping.ColumnMappings.Add("AssignedOfficeID", "AssignedOfficeID");
+            tableMapping.ColumnMappings.Add("Department", "Department");
+            tableMapping.ColumnMappings.Add("DateReceived", "DateReceived");
+            tableMapping.ColumnMappings.Add("ECDDate", "ECDDate");
+            tableMapping.ColumnMappings.Add("WorkOrderStatus", "WorkOrderStatus");
+            tableMapping.ColumnMappings.Add("ProjectManager", "ProjectManager");
+            tableMapping.ColumnMappings.Add("ProjectNotes", "ProjectNotes");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -872,23 +1079,23 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindProjectMatrixByAssignedProjectID";
+            this._commandCollection[0].CommandText = "dbo.FindProjectMatrixByCustomerAssignedID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AssignedProjectID", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerProjectID", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindProjectMatrixByAssignedProjectIDDataSet.FindProjectMatrixByAssignedProjectIDDataTable dataTable, string AssignedProjectID) {
+        public virtual int Fill(FindProjectMatrixByCustomerAssignedIDDataSet.FindProjectMatrixByCustomerAssignedIDDataTable dataTable, string CustomerProjectID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((AssignedProjectID == null)) {
+            if ((CustomerProjectID == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(AssignedProjectID));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(CustomerProjectID));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -901,15 +1108,15 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindProjectMatrixByAssignedProjectIDDataSet.FindProjectMatrixByAssignedProjectIDDataTable GetData(string AssignedProjectID) {
+        public virtual FindProjectMatrixByCustomerAssignedIDDataSet.FindProjectMatrixByCustomerAssignedIDDataTable GetData(string CustomerProjectID) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((AssignedProjectID == null)) {
+            if ((CustomerProjectID == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(AssignedProjectID));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(CustomerProjectID));
             }
-            FindProjectMatrixByAssignedProjectIDDataSet.FindProjectMatrixByAssignedProjectIDDataTable dataTable = new FindProjectMatrixByAssignedProjectIDDataSet.FindProjectMatrixByAssignedProjectIDDataTable();
+            FindProjectMatrixByCustomerAssignedIDDataSet.FindProjectMatrixByCustomerAssignedIDDataTable dataTable = new FindProjectMatrixByCustomerAssignedIDDataSet.FindProjectMatrixByCustomerAssignedIDDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -983,7 +1190,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(FindProjectMatrixByAssignedProjectIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindProjectMatrixByCustomerAssignedIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -993,7 +1200,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(FindProjectMatrixByAssignedProjectIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindProjectMatrixByCustomerAssignedIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1003,7 +1210,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(FindProjectMatrixByAssignedProjectIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindProjectMatrixByCustomerAssignedIDDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1037,7 +1244,7 @@ namespace ProjectMatrixDLL.FindProjectMatrixByAssignedProjectIDDataSetTableAdapt
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(FindProjectMatrixByAssignedProjectIDDataSet dataSet) {
+        public virtual int UpdateAll(FindProjectMatrixByCustomerAssignedIDDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
